@@ -23,9 +23,9 @@ export class AppComponent {
   selectedMeal = null;
 
   masterMealList: Meal[] = [
-    new Meal('Big Mac', 'It was worth it', 560),
-    new Meal('McChicken', 'Im a sucker for these', 370),
-    new Meal('Double Cheeseburger', 'It was my appetizer', 460)
+    new Meal('Eggs and Bacon', 'N/A', 460),
+    new Meal('Pizza', 'Had 3 slices', 875),
+    new Meal('Spaghetti', 'Extra sauce - it was worth it', 560)
   ];
 
   addMeal(newMealFromChild: Meal) {

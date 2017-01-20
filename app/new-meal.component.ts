@@ -7,12 +7,12 @@ import { Meal } from './meal.model';
     <h3>New Meal</h3>
     <div>
       <label>Enter name of meal:</label>
-      <input #newName>
+      <input #newName class="form-control">
       <label>Enter details:</label>
-      <input #newDetails>
+      <input #newDetails class="form-control">
       <label>Enter calorie amount:</label>
-      <input #newCalories>
-      <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">Add</button>
+      <input #newCalories class="form-control">
+      <button class="btn btn-success" (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">Add</button>
     </div>
 
   `

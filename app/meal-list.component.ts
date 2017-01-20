@@ -9,8 +9,16 @@ import { Meal } from './meal.model';
     <option value="lowCalories">Meals less than 500 calories</option>
     <option value="highCalories">Meals over 500 calories</option>
   </select>
+  <br>
+  <br>
   <ul>
-    <li *ngFor="let currentMeal of childMealList | calorieness:filterByCalorieness">{{currentMeal.name}} <button (click)="editButtonHasBeenClicked(currentMeal)">Edit</button></li>
+    <li *ngFor="let currentMeal of childMealList | calorieness:filterByCalorieness">
+      <h4>{{currentMeal.name}}</h4>
+      <p>Details: {{currentMeal.details}}<p>
+      <p>{{currentMeal.calories}} Calories<p>
+      <button class="btn btn-link" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+    </li>
+    <hr>
   </ul>
   `
 })
