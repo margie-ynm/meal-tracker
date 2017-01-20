@@ -10,7 +10,7 @@ import { Meal } from './meal.model';
       <input #newName class="form-control">
       <label>Enter details:</label>
       <input #newDetails class="form-control">
-      <label>Enter calorie amount:</label>
+      <label>Enter number of calories:</label>
       <input #newCalories class="form-control">
       <button class="btn btn-success" (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">Add</button>
     </div>
