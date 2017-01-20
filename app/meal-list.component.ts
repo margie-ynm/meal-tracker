@@ -4,6 +4,7 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-list',
   template: `
+  <h5>Filter by:</h5>
   <select (change)="onChange($event.target.value)">
     <option value="allMeals" selected="selected">All Meals</option>
     <option value="lowCalories">Meals less than 500 calories</option>
